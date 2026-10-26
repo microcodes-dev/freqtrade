@@ -21,6 +21,9 @@
         ],
         "pair_blacklist": []
     },
+    "pairlists": [
+        {"method": "StaticPairList"}
+    ],
     "entry_pricing": {
         "price_side": "same",
         "use_order_book": true,
@@ -37,7 +40,7 @@
         "listen_port": 10000,
         "verbosity": "error",
         "enable_openapi": false,
-        "jwt_secret_key": "x7kP2mQ9vL4nR8wZ",
+        "jwt_secret_key": "x7kP2mQ9vL4nR8wZq3T6yB9cF1hJ4kM7nQ2sV5x",
         "CORS_origins": [],
         "username": "freqtrader",
         "password": "Winnerman20"
