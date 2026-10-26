@@ -8,7 +8,7 @@ class SampleStrategy(IStrategy):
     timeframe = "5m"
 
     minimal_roi = {
-        "0": 0.01
+        "0": 0.10
     }
     stoploss = -0.10
 
@@ -18,12 +18,12 @@ class SampleStrategy(IStrategy):
 
     def populate_entry_trend(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
         dataframe.loc[
-            (dataframe["rsi"] < 70),
+            (dataframe["rsi"] < 30),
             "enter_long"] = 1
         return dataframe
 
     def populate_exit_trend(self, dataframe: DataFrame, metadata: dict) -> DataFrame:
         dataframe.loc[
-            (dataframe["rsi"] > 95),
+            (dataframe["rsi"] > 70),
             "exit_long"] = 1
         return dataframe
