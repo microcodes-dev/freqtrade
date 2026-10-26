@@ -1,6 +1,6 @@
 {
     "max_open_trades": 3,
-    "stake_currency": "USDT",
+    "stake_currency": "USD",
     "stake_amount": 100,
     "tradable_balance_ratio": 0.99,
     "dry_run": true,
@@ -9,15 +9,15 @@
     "trading_mode": "spot",
     "timeframe": "5m",
     "exchange": {
-        "name": "binance",
+        "name": "kraken",
         "key": "",
         "secret": "",
         "ccxt_config": {},
         "ccxt_async_config": {},
         "pair_whitelist": [
-            "BTC/USDT",
-            "ETH/USDT",
-            "SOL/USDT"
+            "BTC/USD",
+            "ETH/USD",
+            "SOL/USD"
         ],
         "pair_blacklist": []
     },
